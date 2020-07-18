@@ -1,11 +1,26 @@
-# crud_proyects
-Ejemplo de CRUD de un sistema de proyectos
+# Ejemplo de CRUD proyectos
 
-Tecnologias:
-1.- NodeJS
-2.- HTML Engine Handlebars
-3.- Express
-4.- Body-parser
-5.- MySQL
-6.- Passport
-7.- Timeago.js
+Este es un ejemplo de un sistema de administracion de proyectos, que realiza la operaciones de guardar, listar, actualizar y eliminar un proyecto.
+
+## Instalacion
+
+Antes Instala el framework NodeJs en tu computadora.
+
+Despues sigue los siguientes comandos:
+
+```bash
+node install
+
+node run dev
+```
+
+## Tecnologias
+
+- Nodejs
+- Express
+- Handlebars (vistas HTML)
+- body-parser
+- mysql (Base de datos)
+- bcryptjs
+- Passport (Login de usuarios)
+- timeago.js (Formato de tiempo)
