@@ -1,5 +1,6 @@
 <div class="container p-4">
     <div class="row" id="info">
+        {{#if options.flag}}
         <table class="table table-hover">
             <thead class="thead-dark">
                 <tr>
@@ -8,11 +9,11 @@
                     <th>Description</th>
                     <th>created_at</th>
                     <th>status</th>
-                    <th colspan="2">Actions</th>
+                    <th colspan="2" class="text-center">Actions</th>
                 </tr>
             </thead>
             <tbody>
-                {{#each proyects}}
+                {{#each options.proyects}}
                 <tr>
                     <td>{{id}}</td>
                     <td>{{name}}</td>
@@ -25,12 +26,11 @@
                 {{/each}}
             </tbody>
         </table>
-
-        <!--<div class="col-md-4 mx-auto">
-                <div class="card card-body text-center">
-                    <p>There are not proyects.</p>
-                    <a href="/proyects/add">Create new Proyect</a>
-                </div>
-            </div>-->
+        {{else}}
+            <div class="col-md-4 mx-auto text-center">
+                <h3>{{options.message}}</h3>
+                <a href="/proyects/add">Create a new proyect</a>
+            </div>
+        {{/if}}
     </div>
 </div>

@@ -2,7 +2,7 @@ module.exports = {
     database: {
         host: 'localhost',
         user: 'antonio',
-        password: 'antonio.100',
+        password: 'anto123',
         database: 'crud_nodejs'
     }
 }
